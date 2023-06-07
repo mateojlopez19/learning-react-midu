@@ -1,0 +1,35 @@
+.formulario{
+  align-content: space-around;
+  background-color: rgb(247, 242, 242);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  max-width: 600px;
+  padding: 0px 20px;
+
+    &-email{
+      margin-top: 10px;
+    }
+    
+    &-password{
+      margin-top: 15px;
+    } 
+
+    &-button{
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+
+      &-submit{
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+    }
+}
+
+p.title{
+  font-size: 20px;
+  font-weight: 500;
+}

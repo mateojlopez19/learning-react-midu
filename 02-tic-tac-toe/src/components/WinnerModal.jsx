@@ -1,0 +1,24 @@
+import React from 'react';
+import { Square } from './Square';
+
+export const WinnerModal = ({ winner, resetGame}) => {
+  if(winner === null) return null;
+
+  const winnerText = winner === false ? 'empate' : 'Gano';
+
+  return (
+      <section className='winner'>
+        <div className='text'>
+          <h2>{winnerText}</h2>
+
+          <header>
+            {winner && <Square>{winner}</Square>}
+          </header>
+
+          <footer>
+            <button onClick={resetGame}>Empezar de nuevo</button>
+          </footer>
+        </div>
+      </section>
+    )
+}
